@@ -5,5 +5,11 @@ class Controller {
     {
         require_once '../app/views/' . $view . '.php';
     }
+    
+    public function model($model)
+    {
+        require_once '../app/models/' . $simbol . '.php';
+        return new $model; 
+    }
 
 }
